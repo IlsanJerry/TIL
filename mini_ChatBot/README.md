@@ -2,41 +2,41 @@
 
 ## 사전 설정
 
-- python 3.7
+* python 3.7
 
-  - 가상환경 설정
+  * 가상환경 설정
 
-    ```
+    ```bash
     $ python -m venv venv
     $ source venv/Scripts/activate
     (venv) $
     ```
 
-    - 항상 프로젝트 코드를 작성할 때에는 가상환경 활성화 여부를 확인할 것!
+    * 항상 프로젝트 코드를 작성할 때에는 가상환경 활성화 여부를 확인할 것!
 
-  - pip
+  * pip
 
-    - requests
+    * requests
 
-    - python-decouple
+    * python-decouple
 
-    - flask
+    * flask
 
-    - 현재 상태 기록
+    * 현재 상태 기록
 
-      ```
+      ```bash
       $ pip freeze > requirements.txt
       ```
 
-    - `requirements.txt` 내용 설치하기
+    * `requirements.txt` 내용 설치하기
 
-      ```
+      ```bash
       $ pip install -r requirements.txt
       ```
 
-- git
+* git
 
-  - `.gitignore`
+  * `.gitignore` 
 
     - `venv/` : 가상환경 설정(Python)
     - `.env` : 환경변수
@@ -44,10 +44,10 @@
 
     등 프로젝트 소스코드와 무관한 내용들을 설정한다.
 
-- 환경변수
+* 환경변수
 
-  - API KEY값이나, DB 설정, 혹은 github에 공개되면 안되는 값들
-  - 파이썬에서 활용되는 `python-decouple` 을 활용하여`.env` 파일로부터 설정된 환경변수를 가져올 수 있음.
+  * API KEY값이나, DB 설정, 혹은 github에 공개되면 안되는 값들
+  * 파이썬에서 활용되는 `python-decouple` 을 활용하여`.env` 파일로부터 설정된 환경변수를 가져올 수 있음.
 
 ## Telegram webhook 설정
 
@@ -57,7 +57,7 @@
 https://api.telegram.org/bot{token}/setWebhook?url={url}
 ```
 
-- URL 패턴 예시
+* URL 패턴 예시
 
 ```
 https://nsdf33.ngrok.io/{token값}
@@ -66,7 +66,7 @@ https://my-project.herokuapp.com/{token값}
 
 url을 만들기 위해서는 배포 및 도메인이 필요하지만, `ngrok` 이라는 서비스를 통해서 로컬 서버에 도메인을 부여할 수 있다.
 
-```
+```bash
 $ ngrok http 5000
 ```
 
@@ -82,7 +82,7 @@ flask 서버가 24시간 동작하게끔 하기위해서 배포 작업을 반드
    web: python app.py
    ```
 
-   - Procfile은 확장자가 없음을 유의하자!
+   * Procfile은 확장자가 없음을 유의하자!
 
 2. `runtime.txt` 생성
 
@@ -92,18 +92,25 @@ flask 서버가 24시간 동작하게끔 하기위해서 배포 작업을 반드
 
 ### 2. 헤로쿠 서버 배포
 
-```
+```bash
 $ heroku login
 $ heroku create {프로젝트명}
 ```
 
-- 중복된 프로젝트 명이나, 대문자 혹은 특수문자 사용시 프로젝트가 생성되지 않으므로 실행 결과를 반드시 확인하자!
-- 배포를 위해서는 현재까지 작성된 내용을 커밋 하여야 한다.
+* 중복된 프로젝트 명이나, 대문자 혹은 특수문자 사용시 프로젝트가 생성되지 않으므로 실행 결과를 반드시 확인하자!
+* 배포를 위해서는 현재까지 작성된 내용을 커밋 하여야 한다. 
 
-```
+```bash
 $ git push heroku master
 ```
 
-- 배포가 완료된 이후에는 코드 수정 사항이 있으면 항상 커밋 하고 push를 한다!
-- 이후에 웹훅 설정을 heroku 주소로 변경하면, 24시간 동작하는 챗봇이 된다!
-- 만약, 코드 수정사항이 있으면 개발을 위해 ngrok 주소로 웹훅 설정을 변경하고, 개발이 완료되면 heroku에 재배포 이후 heroku 주소로 웹훅 설정을 변경하자!
+* 배포가 완료된 이후에는 코드 수정 사항이 있으면 항상 커밋 하고 push를 한다!
+* 이후에 웹훅 설정을 heroku 주소로 변경하면, 24시간 동작하는 챗봇이 된다!
+* 만약, 코드 수정사항이 있으면 개발을 위해 ngrok 주소로 웹훅 설정을 변경하고, 개발이 완료되면 heroku에 재배포 이후 heroku 주소로 웹훅 설정을 변경하자!
+
+
+
+
+
+
+
