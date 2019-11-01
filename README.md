@@ -5,7 +5,7 @@
 
 ## [D02] 191022
 
-- python 자료형(list, dict) 실습
+- python 자료형(list, dict) 
 - python 함수
 - python web scrapping
 - python class
@@ -25,11 +25,11 @@
 
 - Flask Chatbot request - response
 - Flask Chatbot Webhook / ngrok
-- Flask (Lotto, Papago) 실습
+- Flask (Lotto, Papago) 
 - Django Intro
 - Django startproject
 - Django DTL
-- Django TV type (lotto, artii) 실습
+- Django TV type (lotto, artii) 
 
 
 
@@ -41,3 +41,31 @@
   - 가상환경 재설정
   - Django startproject
   - Django render / variable-routing
+
+
+
+## [D07] 191029
+
+- Django GET / POST
+- Django Template Namespace
+- Django Template Inheritance
+  - Django Papago 번역 
+
+
+
+## [D08] 191030
+
+- Database(RDBMS)
+- ORM(Object-relational mapping)
+- Django shell
+- Django Admin
+- Django CR
+
+
+
+## [D09] 191031
+
+- Django CRUD
+- Django RESTful (Create/Update)
+- Delete (POST)
+- Django CRUD 전생앱 
