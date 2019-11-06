@@ -25,11 +25,11 @@
 
 - Flask Chatbot request - response
 - Flask Chatbot Webhook / ngrok
-- Flask (Lotto, Papago) 
+- Flask (Lotto, Papago) 실습
 - Django Intro
 - Django startproject
 - Django DTL
-- Django TV type (lotto, artii) 
+- Django TV type (lotto, artii) 실습
 
 
 
@@ -69,3 +69,35 @@
 - Django RESTful (Create/Update)
 - Delete (POST)
 - Django CRUD 전생앱 
+
+
+
+## [D10] 191101
+
+-   Django CRUD  종합실습(Movie app)
+
+
+
+## [D11] 191104
+
+- Django 1:N Intro
+  - comment_create
+  - comment_delete
+
+
+
+## [D12] 191105
+
+- Django Static Image Upload
+- Django Media Image Upload
+  - Resize Image Upload (Win7 OSError > Win10 or Mac recommend)
+
+
+
+## [D13] 191106
+
+- Django 1:N (Genre/Movie/Score)
+- Favicon
+
+- Django Form
+  - get_object_or_404
