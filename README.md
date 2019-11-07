@@ -25,15 +25,15 @@
 
 - Flask Chatbot request - response
 - Flask Chatbot Webhook / ngrok
-- Flask (Lotto, Papago) 실습
+- Flask (Lotto, Papago) 
 - Django Intro
 - Django startproject
 - Django DTL
-- Django TV type (lotto, artii) 실습
+- Django TV type (lotto, artii) 
 
 
 
-## [D05] 191025 - 아이디어톤
+## [D05] 191025 - 1차 아이디어톤
 
 ## [D06] 191028
 
@@ -68,13 +68,13 @@
 - Django CRUD
 - Django RESTful (Create/Update)
 - Delete (POST)
-- Django CRUD 전생앱 
+- Django CRUD 
 
 
 
 ## [D10] 191101
 
--   Django CRUD  종합실습(Movie app)
+-   Django CRUD  종합
 
 
 
@@ -96,8 +96,13 @@
 
 ## [D13] 191106
 
-- Django 1:N (Genre/Movie/Score)
+- Django 1:N 
 - Favicon
-
 - Django Form
   - get_object_or_404
+
+
+
+## [D14] 191107
+
+- 2차 아이디어톤 준비
