@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'xyts)lm_1uc3#f^4rblgl9k!1ro!7n)41z=ous*+(1as5yclnx'
+SECRET_KEY = '%(+_j3-ehx1*s_owp2m@c8jhs_$f105(k)-*5(97l90oszif)&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -19,15 +19,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'articles',
+    'movies',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -40,7 +38,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'myform.urls'
+ROOT_URLCONF = 'django_movie.urls'
 
 TEMPLATES = [
     {
@@ -58,7 +56,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myform.wsgi.application'
+WSGI_APPLICATION = 'django_movie.wsgi.application'
 
 
 # Database

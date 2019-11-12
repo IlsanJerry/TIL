@@ -31,8 +31,6 @@
 - Django DTL
 - Django TV type (lotto, artii) 
 
-
-
 ## [D05] 191025 - 1차 아이디어톤
 
 ## [D06] 191028
@@ -68,7 +66,7 @@
 - Django CRUD
 - Django RESTful (Create/Update)
 - Delete (POST)
-- Django CRUD 
+- Django CRUD
 
 
 
@@ -106,3 +104,20 @@
 ## [D14] 191107
 
 - 2차 아이디어톤 준비
+
+
+
+## [D15] 191108 - 2차 아이디어톤
+
+- 5인용 (집 밖은 위험해) 
+
+
+
+## [D16] 191111
+
+- Django 1:N 
+- Django form class review
+
+- Django ModelForm
+  - request.resolver_match.url_name
+  - bootstrap_form
