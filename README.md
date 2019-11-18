@@ -29,7 +29,8 @@
 - Django Intro
 - Django startproject
 - Django DTL
-- Django TV type (lotto, artii) 
+
+
 
 ## [D05] 191025 - 1차 아이디어톤
 
@@ -66,13 +67,13 @@
 - Django CRUD
 - Django RESTful (Create/Update)
 - Delete (POST)
-- Django CRUD
+- Django CRUD 전생앱 실습
 
 
 
 ## [D10] 191101
 
--   Django CRUD  종합
+-   Django CRUD 
 
 
 
@@ -109,7 +110,7 @@
 
 ## [D15] 191108 - 2차 아이디어톤
 
-- 5인용 (집 밖은 위험해) 
+- 집 밖은 위험해
 
 
 
@@ -117,7 +118,40 @@
 
 - Django 1:N 
 - Django form class review
-
 - Django ModelForm
   - request.resolver_match.url_name
   - bootstrap_form
+
+
+
+## [D17] 191112
+
+- Django ModelForm review
+- Django Authentication
+  - Signup / Login / Logout / Quit
+
+
+
+## [D18] 191113
+
+- Webpage Designing(Bootstrap)
+- Django Authentication
+  - Edit / Password
+  - template: auth_form
+  - Model: article.user
+
+
+
+## [D19] 191114
+
+- Django Authentication
+  - comment.user
+- Django Model Relation
+  - 1:N (Article:Comment / User:Article / User:Comment)
+  - M:N (User:Article[Like] / User:User[Following/Follower]) Logic
+
+
+
+## [D20] 191115
+
+- Django ModelForm, 1:N, Auth 

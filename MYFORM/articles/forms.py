@@ -28,7 +28,7 @@ class ArticleForm(forms.ModelForm):
         model = Article
         fields = ['title', 'content',]
 
-class CommentForm(forms.Form):
+class CommentForm(forms.ModelForm):
     content = forms.CharField(
         label = '댓글',
         widget=forms.TextInput(

@@ -37,7 +37,8 @@ def detail(request, article_pk):
     article = get_object_or_404(Article, pk=article_pk)
     # article = Article.objects.get(pk=article_pk)
     comments = article.comment_set.order_by('-pk')
-    return render(request, 'articles/detail.html', {'article':article, 'comments':comments})
+    comment_form = CommentForm()
+    return render(request, 'articles/detail.html', {'article':article, 'comments':comments, 'comment_form':comment_form})
 
 def delete(request, article_pk):
     article = get_object_or_404(Article, pk=article_pk)
@@ -67,10 +68,17 @@ def update(request, article_pk):
 def comment_create(request, article_id):
     article = Article.objects.get(pk=article_id)
     if request.method == 'POST':
-        comment = Comment()
-        comment.content = request.POST.get('content')
-        comment.article = article
-        comment.save()
+        comment_form = CommentForm(request.POST)
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.article = article
+            comment.save()
+            # content = comment_form.cleaned_data.get('content')
+            # comment = Comment.objects.create(content=content, article=article)
+        # comment = Comment()
+        # comment.content = request.POST.get('content')
+        # comment.article = article
+        # comment.save()
     return redirect('articles:detail', article_id)
 
 def comment_delete(request, article_id, comment_id):
