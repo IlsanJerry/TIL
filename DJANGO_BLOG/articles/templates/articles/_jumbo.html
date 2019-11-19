@@ -1,0 +1,15 @@
+{% load static %}
+<div class="container">
+    <div class="jumbotron bg-secondary">
+        <img src="{% static 'images/logo-hangul-no-background.png' %}" alt="ㅎㅍㅎㅋ" width='300px' style='display:inline'>
+        <h1 class="display-4 text-white" style='display:inline'>Juan's BLOG</h1>
+        <p class="lead">HAPPY HACKING</p>
+        <hr class="my-4">
+        <p class="font-italic">Whatever you want to say</p>
+        {% if user.is_authenticated %}
+        <a class="btn btn-warning btn-lg" href="{% url 'articles:create' %}" role="button">새 글</a>
+        {% else %}
+        <a class="btn btn-warning btn-lg" href="{% url 'accounts:login' %}" role="button">로그인 해주세요</a>
+        {% endif %}
+    </div>
+</div>

@@ -25,10 +25,11 @@
 
 - Flask Chatbot request - response
 - Flask Chatbot Webhook / ngrok
-- Flask (Lotto, Papago) 
+- Flask (Lotto, Papago)
 - Django Intro
 - Django startproject
 - Django DTL
+- Django TV type (lotto, artii) 
 
 
 
@@ -48,7 +49,7 @@
 - Django GET / POST
 - Django Template Namespace
 - Django Template Inheritance
-  - Django Papago 번역 
+  - Django Papago 번역
 
 
 
@@ -67,13 +68,13 @@
 - Django CRUD
 - Django RESTful (Create/Update)
 - Delete (POST)
-- Django CRUD 전생앱 실습
+- Django CRUD
 
 
 
 ## [D10] 191101
 
--   Django CRUD 
+-   Django CRUD  종합실습(Movie app)
 
 
 
@@ -95,7 +96,7 @@
 
 ## [D13] 191106
 
-- Django 1:N 
+- Django 1:N 실습(Genre/Movie/Score)
 - Favicon
 - Django Form
   - get_object_or_404
@@ -111,8 +112,6 @@
 ## [D15] 191108 - 2차 아이디어톤
 
 - 집 밖은 위험해
-
-
 
 ## [D16] 191111
 
@@ -148,10 +147,31 @@
   - comment.user
 - Django Model Relation
   - 1:N (Article:Comment / User:Article / User:Comment)
-  - M:N (User:Article[Like] / User:User[Following/Follower]) Logic
+  - M:N (User:Article[Like] / User:User[Following/Follower])
 
 
 
 ## [D20] 191115
 
-- Django ModelForm, 1:N, Auth 
+- Django ModelForm, 1:N, Auth 종합
+
+
+
+## [D21] 191118
+
+- Django M:N review
+- Django Like
+  - fontawesome.com
+- Template 분할 (_nav.html, _article.html)
+- Django User Profile
+
+
+
+## [D22] 191119
+
+- Template 분할 
+- Django Follow
+  - AbstractUser
+- Django SocialLogin
+  - KAKAO
+
